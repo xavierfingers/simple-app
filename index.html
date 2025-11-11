@@ -2,26 +2,27 @@
     <body>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <style>
-	body {
-           background-color: grey;
-           justify-content: center;
-           align-items: center;
+	 body {
+       justify-content: center;
+        align-items: center;
+
      }
    </style>
 	<script>
            function click() {
-              alert("Hello, jQuery!")
+             $('h1').html("<em>Hello, World!</em>").fadeOut(500);
            }
-	  $('document').ready(function() {
+	 $('document').ready(function() {
         $('h1').html("<em>Hello, World!</em>").fadeOut(500);
         $('h1').html("<em>Hello, World!</em>").fadeIn(500);
+        $('button').css("background-color", "grey");
         $('p').html("jQuery is Great! It makes you write less but do more!");
   })
     </script>
- <script> window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); }; </script>
+    <script> window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
    <script defer src="/_vercel/insights/script.js"></script>
    <button onclick="click()"><h1></h1></button>
    <p></p>
    </body>
 </html>
-        
